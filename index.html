@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center" id="titulo">Conversor de Texto a Código Morse</h1>
+        <h1 class="text-center" id="titulo">Buscador de caracteres</h1>
         <br><br>
         <div class="row position-relative">
             <!-- Primera fila -->
             <div class="col-md-6 position-relative">
-                <h2>De Texto a Morse</h2>
-                <textarea id="texto" class="form-control custom-textarea" rows="5" placeholder="Ingresa el texto que quieres convertir a código morse"></textarea>
-                <button class="btn btn-primary mt-2 custom-btn" id="convertirTexto">Convertir a Morse</button>
+                <h2>Ingresa un texto para analizar</h2>
+                <textarea id="texto" class="form-control custom-textarea" rows="5" placeholder="Ingresa el texto que quieres analizar "></textarea>
+                <button class="btn btn-primary mt-2 custom-btn" id="convertirTexto">analiza el texto</button>
             </div>
     
             <!-- Flecha -->
@@ -25,23 +25,11 @@
             </div>
     
             <div class="col-md-6 position-relative">
-                <h2>Código Morse</h2>
-                <textarea id="morse" class="form-control custom-textarea" rows="5" readonly></textarea>
+                <h2>¿qué caracter quieres que contemos?</h2>
+                <textarea id="morse" class="form-control custom-textarea" rows="5" placeholder="Ingresa un caracter para buscar"></textarea>
             </div>
         </div>
-    
-        <div class="row mt-4">
-            <!-- Segunda fila -->
-            <div class="col-md-6">
-                <h2>De Morse a Texto</h2>
-                <textarea id="morseInput" class="form-control custom-textarea" rows="5" placeholder="Ingresa el código morse aquí para convertir a texto"></textarea>
-                <button class="btn btn-primary mt-2 custom-btn" id="convertirMorse">Convertir a Texto</button>
-            </div>
-            <div class="col-md-6">
-                <h2>Texto</h2>
-                <textarea id="textoResultado" class="form-control custom-textarea" rows="5" readonly></textarea>
-            </div>
-        </div>
+
         <div class="text-center mt-4">
             <button class="btn btn-primary custom-btn" id="limpiarCampos">Limpiar Campos</button>
         </div>
