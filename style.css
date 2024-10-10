@@ -13,7 +13,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    transform: scale(0.8); 
+    transform: scale(0.9); /* Ajustado para ser más grande */
 }
 
 h1, h2, h3 {
@@ -22,12 +22,11 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 50px; 
+    font-size: 60px; /* Aumentado para ser más grande */
     color: cyan;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin-left: -12%;
-    
     transition: transform 0.5s ease;
     position: absolute;
     top: 0%;
@@ -35,38 +34,38 @@ h1 {
 }
 
 h2 {
-    font-size: 32px; 
+    font-size: 42px; /* Aumentado */
     letter-spacing: 2px;
     margin-top: 0%;
 }
 
-h1:hover {
-    animation: dance 1.3s ease-in-out infinite;
+h3 {
+    padding-left: 10%;
+    font-size: 42px; /* Aumentado */
 }
-
 
 .custom-textarea {
     resize: none;
     border: 2px solid #00e5e9;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 10px;
+    padding: 25px; /* Aumentado */
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
-    font-size: 1.2em; 
+    font-size: 1.2em; /* Aumentado */
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 100%;
 }
 
 .custom-btn {
-    padding: 12px 24px; 
+    padding: 16px 32px; /* Aumentado */
     background-image: linear-gradient(120deg, #0080f7 0%, #320063 60%, #ae00ff 100%);
     color: white;
     border: none;
     border-radius: 30px;
     margin: 10px;
-    font-size: 1em; 
+    font-size: 1.2em; /* Aumentado */
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -91,26 +90,26 @@ textarea {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.6em; 
+        font-size: 2.2em; /* Ajustado para pantallas pequeñas */
         left: 10%;
     }
     .custom-btn {
-        font-size: 0.8em; 
+        font-size: 1em; /* Ajustado */
     }
 }
+
 #texto, #morse, #morseInput, #textoResultado {
-    resize: none; 
+    resize: none;
     border: 2px solid #00e5e9;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-    background-color: rgba(0, 0, 0, 0.2); 
-    backdrop-filter: blur(5px); 
-    font-size: 1.2em; 
-    font-weight: bold; 
-    color: white; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    font-size: 1.2em; /* Aumentado */
+    font-weight: bold;
+    color: white;
     width: 100%;
 }
-
 
 .arrow-container {
     display: flex;
@@ -121,6 +120,6 @@ textarea {
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    height: 60px;
-    width: 100px;
+    height: 80px; /* Aumentado */
+    width: 120px; /* Aumentado */
 }
